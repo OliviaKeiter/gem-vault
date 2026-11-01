@@ -1,0 +1,336 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#20152b"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Gem Vault"><title>Keiter Family Gem Vault ✧ Diamond Bid & Inventory</title><style>
+:root{--ink:#f9eff8;--muted:#d1bfd0;--plum:#20152b;--card:#2f203c;--border:rgba(255,220,248,.18);--gold:#ffdc99;--blush:#f3b6da;--lav:#c8b3ff;--mint:#b8f9d3;--danger:#ffb5bc;--orange:#ffdab0}
+*{box-sizing:border-box}html{min-height:100%;background:var(--plum)}
+body{margin:0;min-height:100vh;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(ellipse at 95% -8%,#6f3c73 0%,transparent 34%),radial-gradient(ellipse at 3% 34%,#47264e 0%,transparent 55%),linear-gradient(155deg,#25152f,#171321 80%);line-height:1.42;padding:0 0 env(safe-area-inset-bottom)}
+main{width:min(100%,530px);margin:0 auto;padding:22px 16px 36px;position:relative;z-index:1}
+header{text-align:center;position:relative;padding:9px 4px 15px}
+.eyebrow{font-size:10px;letter-spacing:.27em;font-weight:750;color:var(--gold)}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(30px,8.3vw,43px);font-weight:500;line-height:1.06;margin:10px 0 5px;letter-spacing:-.025em}
+h1 em{font-style:italic;color:#ffdcac}
+.subhead{color:#e4d0e5;font-size:12px;margin:9px auto;max-width:325px}
+.glitter{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.spark{position:absolute;display:block;color:var(--gold);font-size:15px;animation:shine 2.8s ease-in-out infinite}
+.spark:nth-child(1){top:6px;left:10%;animation-delay:.15s;font-size:20px}
+.spark:nth-child(2){top:37px;right:12%;animation-delay:.9s;font-size:25px}
+.spark:nth-child(3){top:77px;left:3%;animation-delay:1.8s;font-size:11px}
+.spark:nth-child(4){top:107px;right:1%;animation-delay:1.2s;font-size:15px}
+.spark:nth-child(5){top:15px;right:30%;animation-delay:.2s;font-size:10px;color:var(--blush)}
+@keyframes shine{0%,100%{opacity:.28;transform:scale(.6) rotate(-20deg)}50%{opacity:1;transform:scale(1.25) rotate(20deg)}}
+.top-pill{display:inline-flex;align-items:center;gap:7px;background:rgba(255,235,250,.07);border:1px solid var(--border);border-radius:99px;padding:5px 11px;color:#dfcede;font-size:10px;letter-spacing:.06em}
+.panel{background:linear-gradient(138deg,rgba(72,47,86,.92),rgba(36,25,48,.96));border:1px solid var(--border);border-radius:21px;padding:17px;box-shadow:0 14px 38px rgba(10,5,18,.27);margin:12px 0}
+.sectiontop{display:flex;align-items:center;justify-content:space-between;margin:0 0 13px}
+.sectiontop h2{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;margin:0;color:#f1d6ee}
+.sectiontop .tiny{font-size:10px;color:#bbacc4}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{display:block;font-size:11px;color:#e3cee1;margin-bottom:7px;font-weight:750}
+select,input{width:100%;background:#261b32;color:white;border:1px solid rgba(239,208,238,.25);border-radius:11px;padding:12px 11px;font-size:15px;outline:none;min-height:47px;font-family:inherit}
+select:focus,input:focus,button:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+select{appearance:none;padding-right:27px;background-image:url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"%3E%3Cpath d="m1 1 5 5 5-5" fill="none" stroke="%23eecded" stroke-width="1.6"/%3E%3C/svg%3E');background-position:right 11px center;background-repeat:no-repeat}
+input[type="number"]{-moz-appearance:textfield;font-variant-numeric:tabular-nums}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.caption{color:#baaac0;font-size:10px;margin-top:7px;line-height:1.35}
+#cutNote{font-size:10px;color:var(--gold);margin-top:8px;min-height:12px}
+.field{margin:12px 0 0}
+.stepper{display:flex;gap:7px;align-items:center}
+.stepper input{flex:1;min-width:0;text-align:center;font-size:19px;font-weight:750;letter-spacing:.02em;padding:10px 4px}
+.step{background:#61446d;color:white;border:1px solid rgba(255,230,253,.15);border-radius:10px;min-width:41px;height:45px;font-size:23px;cursor:pointer;touch-action:manipulation}
+.step:active{transform:scale(.94)}
+.smallsteps{display:grid;grid-template-columns:repeat(6,1fr);gap:5px;margin-top:7px}
+.smallsteps button{background:#3d2b4d;border:1px solid rgba(249,228,255,.12);border-radius:8px;color:#e7d1e8;padding:7px 2px;font-size:10px;cursor:pointer;min-height:35px;font-weight:750;touch-action:manipulation}
+.smallsteps button:active{background:#735282}
+.qtybtn{min-width:50px}
+.line{border:0;border-top:1px solid rgba(244,218,248,.13);margin:15px 0}
+.gridprice{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.pricebox{border-radius:14px;padding:12px;min-height:91px;background:rgba(16,12,23,.36);border:1px solid rgba(255,231,250,.09)}
+.pricebox b{display:block;font-family:Georgia,serif;font-size:clamp(20px,5.5vw,29px);font-weight:500;line-height:1.2;margin-top:5px;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.pricebox .name{font-size:10px;color:#cab1cb;line-height:1.25}
+.goldtext{color:var(--gold)}.minttext{color:var(--mint)}
+.bigprice{border:1px solid rgba(255,221,154,.45);background:linear-gradient(135deg,rgba(112,69,80,.5),rgba(59,39,70,.6));padding:16px;border-radius:16px;text-align:center;margin-top:13px;position:relative;overflow:hidden}
+.bigprice:after{content:'✧';position:absolute;right:15px;top:4px;color:var(--gold);font-size:35px;opacity:.5}
+.bigprice small{font-size:11px;letter-spacing:.11em;font-weight:800;text-transform:uppercase;color:#efcee9}
+.bigprice strong{font-size:clamp(36px,10vw,51px);font-family:Georgia,serif;color:var(--gold);display:block;font-weight:400;margin:5px 0 2px;line-height:1.1;font-variant-numeric:tabular-nums}
+.bigprice span{display:block;font-size:11px;color:#f1ddea}
+.maxrow{display:flex;gap:9px;align-items:end;margin:15px 0 0}
+.maxrow>div{flex:1}
+button.secondary{border:1px solid rgba(255,221,154,.35);border-radius:11px;background:transparent;color:#f0d8af;padding:10px 12px;min-height:46px;font-size:11px;font-weight:750;cursor:pointer}
+.status{padding:12px;border-radius:12px;margin-top:13px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);font-size:12px;color:#ded4e2}
+.status.green{border-color:rgba(157,255,194,.4);color:#c4ffd9;background:rgba(29,94,63,.22)}
+.status.amber{border-color:rgba(255,214,130,.38);color:#ffe2aa;background:rgba(129,82,22,.16)}
+.status.red{border-color:rgba(255,166,167,.38);color:#ffced1;background:rgba(128,35,51,.18)}
+.status strong{display:block;font-size:13px;margin-bottom:4px}
+.kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:12px}
+.kpi>div{border-radius:11px;background:rgba(15,8,25,.35);padding:9px;text-align:center}
+.kpi small{display:block;color:#c5b1cb;font-size:9px}
+.kpi b{display:block;font-size:15px;margin-top:4px;font-variant-numeric:tabular-nums;color:#fff1d3}
+.actions{display:flex;gap:9px;margin-top:12px}
+.actions button{flex:1;min-height:43px;border-radius:11px;border:1px solid rgba(255,234,255,.2);color:#f9ecf9;background:rgba(123,83,130,.45);font-weight:700;font-size:12px;cursor:pointer}
+.actions button:first-child{background:linear-gradient(110deg,#eac297,#f6dbe2);color:#382039;border:0}
+details{border:1px solid rgba(255,226,251,.16);border-radius:16px;background:rgba(53,36,68,.57);margin-top:14px;padding:12px}
+summary{cursor:pointer;font-size:12px;font-weight:800;list-style:none;display:flex;justify-content:space-between;color:#f0dfef;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary:after{content:'⌄';font-size:20px;color:var(--gold)}
+details[open] summary:after{content:'⌃'}
+.table-wrap{overflow-x:auto;margin-top:10px}
+table{width:100%;border-collapse:collapse;font-size:11px}th,td{padding:8px 5px;text-align:right;border-bottom:1px solid rgba(255,255,255,.09)}th:first-child,td:first-child{text-align:left}th{color:var(--gold);font-weight:700}td{color:#ede2ef}
+.foot{color:#b9a6c1;font-size:10px;line-height:1.55;text-align:center;margin:16px 10px 0}
+#toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#ffebc7;color:#24182e;padding:10px 16px;border-radius:99px;font-size:12px;font-weight:800;box-shadow:0 5px 25px #0005;opacity:0;transition:opacity .2s;pointer-events:none;white-space:nowrap;z-index:5}
+#toast.show{opacity:1}
+@media (max-width:350px){main{padding-left:9px;padding-right:9px}.panel{padding:12px}.smallsteps button{font-size:9px}.step{min-width:34px}}
+@media (prefers-reduced-motion:reduce){.spark{animation:none;opacity:.8}*{scroll-behavior:auto!important;transition:none!important}}
+@media print{body{background:#251729!important;print-color-adjust:exact;-webkit-print-color-adjust:exact}.actions,.smallsteps{display:none}}
+
+
+/* v2: phone-first, responsive, avoids iOS input autofocus zoom */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:86px}
+body{overflow-x:hidden;min-width:0}
+main{max-width:520px;width:100%;padding:10px 12px calc(34px + env(safe-area-inset-bottom));overflow-x:clip}
+header{padding:6px 2px 11px}
+h1{font-size:clamp(28px,8vw,38px);margin:4px 0 3px}
+.subhead{margin:4px auto 8px;font-size:12px}
+.panel{padding:15px;margin:10px 0;border-radius:18px}
+label{font-size:12px}
+input,select,textarea{font-size:16px!important;max-width:100%;}
+.stepper input{font-size:18px!important}
+button{touch-action:manipulation}
+.top-pill{font-size:10px}
+.tabbar{position:sticky;top:0;z-index:20;background:rgba(33,22,44,.96);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);padding:7px 3px 9px;border-radius:0 0 16px 16px;display:grid;grid-template-columns:1fr 1fr;gap:7px;border-bottom:1px solid rgba(255,222,243,.16)}
+.tabbar button{min-height:45px;border:1px solid rgba(255,225,250,.18);border-radius:12px;background:#2d203a;color:#dbc5dc;font-size:13px;font-weight:750;letter-spacing:.01em}
+.tabbar button.active{color:#2b1737;background:linear-gradient(125deg,#f5cf9d,#f3bfdc);border-color:#f9d8ae;box-shadow:0 0 14px #efbfde22}
+[hidden]{display:none!important}
+.smallsteps{gap:4px}
+.smallsteps button{font-size:11px;padding:7px 0}
+.chip{display:inline-block;padding:4px 8px;border-radius:30px;font-weight:750;font-size:10px;background:#4b345a;border:1px solid #8c648d;color:#faeaf8}
+.chip.owned{background:#24443e;border-color:#537d72;color:#d2ffe5}
+.chip.ordered{background:#463d5a;border-color:#8170a2;color:#eadcff}
+.chip.provisional{background:#513d29;border-color:#94704f;color:#ffedcc}
+.empty{text-align:center;color:#d2bed4;padding:25px 8px}
+.inv-head{display:flex;justify-content:space-between;gap:12px;align-items:center}
+.inv-head h2{font-size:14px;font-weight:800;letter-spacing:.08em;margin:0}
+.summary-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.summary-grid>div{background:rgba(15,8,25,.36);border:1px solid rgba(255,255,255,.09);padding:10px 7px;border-radius:12px;text-align:center}
+.summary-grid b{display:block;color:#ffdb9c;font-size:21px;font-family:Georgia,serif;font-weight:400}
+.summary-grid small{color:#d0bdd2;font-size:10px;display:block}
+.inv-list{display:flex;flex-direction:column;gap:9px;margin:12px 0}
+.inv-card{border:1px solid rgba(255,230,247,.17);background:linear-gradient(130deg,rgba(72,48,86,.8),rgba(37,25,48,.96));border-radius:16px;padding:11px;display:grid;grid-template-columns:54px minmax(0,1fr);gap:10px}
+.inv-stone{width:54px;height:58px;border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:28px;background:radial-gradient(circle at 32% 23%,#82668e,#30203d 70%);border:1px solid #9e779577;overflow:hidden}
+.inv-stone img{width:100%;height:100%;object-fit:cover}
+.inv-title{font-size:14px;font-weight:800;line-height:1.25}
+.inv-meta{font-size:11px;color:#cbb6ce;line-height:1.45;margin-top:4px}
+.inv-actions{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-top:7px}
+.inv-actions button{padding:5px 10px;border:1px solid #806586;background:#3c2c4b;color:#f7e7f5;border-radius:8px;font-size:11px;font-weight:700}
+.inv-price{color:#f6d39a;font-weight:800}
+.flexrow{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.primary{background:linear-gradient(115deg,#f3cf9f,#f0bcdd);color:#311d36;border:0;border-radius:11px;font-size:13px;font-weight:800;min-height:44px;padding:9px 13px}
+.ghost{background:rgba(85,56,97,.5);color:#f9e8f6;border:1px solid #87698b;border-radius:11px;font-size:12px;font-weight:750;min-height:42px;padding:8px 11px}
+.toolbar{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.toolbar button{flex:1;min-width:95px}
+#inventoryFilter,#inventorySearch{margin-top:9px}
+.formshade{position:fixed;inset:0;background:rgba(8,5,16,.8);z-index:80;display:flex;align-items:flex-end;justify-content:center;padding:0}
+.formmodal{width:100%;max-width:530px;max-height:95dvh;overflow-y:auto;overscroll-behavior:contain;background:linear-gradient(155deg,#382440,#1e172b);border-radius:24px 24px 0 0;border:1px solid #735579;padding:17px 15px calc(20px + env(safe-area-inset-bottom));box-shadow:0 -18px 50px #0008}
+.formmodal h2{font-family:Georgia,serif;font-size:25px;font-weight:400;margin:4px 0 12px}
+.formmodal .twocol{gap:9px}
+.formmodal .field{margin-top:9px}
+textarea{display:block;width:100%;background:#261b32;color:#fff;border:1px solid rgba(239,208,238,.25);border-radius:11px;padding:11px;min-height:65px;font-family:inherit;resize:vertical}
+.formmodal input[type=file]{padding:9px;font-size:13px!important}
+.formmodal .stickybottom{position:sticky;bottom:-20px;background:#25192e;padding:10px 0;display:flex;gap:8px;z-index:1}
+.formmodal .stickybottom button{flex:1}
+.note{font-size:11px;color:#cab8cf;margin:7px 0;line-height:1.4}
+.sparkwave{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.sparkwave span{position:absolute;font-size:13px;color:#ffdeb6;opacity:.5;animation:shine 4s ease-in-out infinite}
+.sparkwave span:nth-child(1){top:17%;left:3%;animation-delay:.8s}
+.sparkwave span:nth-child(2){top:42%;right:3%;animation-delay:1.9s}
+.sparkwave span:nth-child(3){top:70%;left:7%;animation-delay:2.7s}
+.sparkwave span:nth-child(4){top:86%;right:6%;animation-delay:.2s}
+.backup-warning{border-left:3px solid #f3d3a8;padding:9px 11px;background:#4a3450;font-size:11px;color:#f9e5e6;border-radius:6px;margin-top:10px}
+@media(max-width:370px){main{padding-left:9px;padding-right:9px}.panel{padding:12px}.twocol{gap:8px}.pricebox{padding:9px}.pricebox b{font-size:20px}.smallsteps button{font-size:10px}.inv-card{grid-template-columns:45px minmax(0,1fr)}.inv-stone{width:45px;height:51px}}
+@media(prefers-reduced-motion:reduce){.sparkwave span{animation:none}}
+</style><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png"></head><body><main><div class="sparkwave" aria-hidden="true"><span>✧</span><span>✦</span><span>✧</span><span>✦</span></div><header>
+<div class="glitter" aria-hidden="true"><span class="spark">✦</span><span class="spark">✧</span><span class="spark">✦</span><span class="spark">✧</span><span class="spark">✦</span></div>
+<div class="eyebrow">✦ THE KEITER FAMILY ✦</div>
+<h1>Gem <em>Vault</em> ✨</h1>
+<p class="subhead">A sparkly pocket calculator & family heirloom collection.</p>
+<span class="top-pill">✧ Auto-saves here · Export a backup to keep it safe</span>
+</header><nav class="tabbar" role="tablist"><button id="tabCalc" type="button" class="active" role="tab" aria-controls="calculatorPage" aria-selected="true">💎 Bid checker</button><button id="tabInventory" type="button" role="tab" aria-controls="inventoryPage" aria-selected="false">✨ My inventory</button></nav><section id="calculatorPage" aria-label="Diamond bid calculator">
+<section class="panel">
+  <div class="sectiontop"><h2>01 · Pick your sparkle</h2><span class="tiny">loose lab diamonds</span></div>
+  <div class="twocol">
+    <div><label for="cut">Diamond cut</label><select id="cut"></select></div>
+    <div><label for="color">Diamond color</label><select id="color"></select></div>
+  </div>
+  <div id="cutNote">✧ White stones use cut-based targets.</div>
+  <div class="field">
+    <label for="carat">Carats PER stone (down to 0.001 ct)</label>
+    <div class="stepper"><button class="step" id="minus" type="button" aria-label="Subtract 0.01 carat">−</button><input id="carat" type="number" min="0.001" step="0.001" inputmode="decimal" value="1.180" /><button class="step" id="plus" type="button" aria-label="Add 0.01 carat">+</button></div>
+    <div class="smallsteps" aria-label="Fine tune carat weight">
+      <button data-carat="-0.1">−0.100</button><button data-carat="-0.01">−0.010</button><button data-carat="-0.001">−0.001</button><button data-carat="0.001">+0.001</button><button data-carat="0.01">+0.010</button><button data-carat="0.1">+0.100</button>
+    </div>
+  </div>
+  <div class="field"><label for="qty">Quantity · how many diamonds?</label>
+    <div class="stepper"><button class="step qtybtn" id="qtyMinus" type="button" aria-label="Subtract one diamond">−</button><input id="qty" type="number" min="1" max="1000" step="1" inputmode="numeric" value="1"/><button class="step qtybtn" id="qtyPlus" type="button" aria-label="Add one diamond">+</button></div>
+    <p class="caption">Enter carat weight for <strong>one stone</strong>. The quantity multiplies it. For a lot labeled 0.35 ct total / 10 stones, enter 0.035 ct each × 10.</p>
+  </div>
+</section>
+<section class="panel">
+  <div class="sectiontop"><h2>02 · Your price guide</h2><span class="tiny">USD / carat</span></div>
+  <div class="gridprice">
+    <div class="pricebox"><div class="name">✨ Amazing-deal target / ct</div><b id="greatCt" class="minttext">≤ $150</b></div>
+    <div class="pricebox"><div class="name">✧ Soft ceiling / ct</div><b id="capCt" class="goldtext">$275</b></div>
+  </div>
+  <div class="maxrow"><div><label for="personalMax">Your max price per carat ($)</label><input id="personalMax" type="number" min="0" step="1" inputmode="decimal" value="275"/></div><button type="button" class="secondary" id="useGuide">Use guide max ↺</button></div>
+  <div class="bigprice"><small>✦ Your total bid limit ✦</small><strong id="targetTotal">$324.50</strong><span id="weightSummary">1.180 ct total · 1 stone</span></div>
+  <div class="kpi"><div><small>Great-deal total ≤</small><b id="greatTotal">$177</b></div><div><small>Guide ceiling total</small><b id="capTotal">$324.50</b></div><div><small>Weight, all stones</small><b id="weightTotal">1.180 ct</b></div></div>
+</section>
+<section class="panel">
+  <div class="sectiontop"><h2>03 · Check a live bid</h2><span class="tiny">including extras</span></div>
+  <div class="twocol">
+    <div><label for="bid">Current lot bid ($)</label><input id="bid" type="number" min="0" step="0.01" placeholder="e.g. 95" inputmode="decimal" /></div>
+    <div><label for="fees">Shipping + fees ($)</label><input id="fees" type="number" min="0" step="0.01" value="0" inputmode="decimal" /></div>
+  </div>
+  <div class="status" id="status" aria-live="polite"><strong>✨ Ready when you are</strong>Enter the auction bid to see if it beats your target.</div>
+  <div class="kpi"><div><small>All-in cost</small><b id="allIn">—</b></div><div><small>Effective $ / ct</small><b id="effectiveCt">—</b></div><div><small>Room left</small><b id="room">—</b></div></div>
+  <div class="actions"><button type="button" id="copy">✧ Copy bid summary</button><button type="button" id="clearBid">Clear bid</button></div>
+<div class="actions" style="margin-top:10px"><button id="saveBidToVault" type="button">＋ Add this stone to my inventory</button></div>
+</section>
+<details><summary>Full price guide · all cuts + colors</summary><div class="table-wrap"><table><thead><tr><th>White diamond cut</th><th>Amazing ≤ / ct</th><th>Soft max / ct</th></tr></thead><tbody id="cutsTable"></tbody></table></div><div class="table-wrap"><table><thead><tr><th>Fancy color</th><th>Great / ct</th><th>Soft max / ct</th></tr></thead><tbody id="colorsTable"></tbody></table></div></details>
+</section>
+<section id="inventoryPage" hidden aria-label="Gem inventory">
+  <section class="panel">
+    <div class="inv-head"><h2>✦ YOUR GEMSTONE COLLECTION</h2><button id="addGem" type="button" class="primary">＋ Add gem</button></div>
+    <p class="note">Your stones, jewelry, and setting plans in one place. Tap Edit to update details when packages arrive.</p>
+    <div class="summary-grid"><div><b id="countItems">0</b><small>Entries</small></div><div><b id="countStones">0</b><small>Stones / pieces</small></div><div><b id="spentTotal">$0</b><small>Recorded purchases</small></div></div>
+    <input id="inventorySearch" type="search" placeholder="Search stones, cuts, reports, plans…" aria-label="Search inventory" />
+    <select id="inventoryFilter" aria-label="Inventory status filter">
+      <option value="all">Everything in my vault</option><option value="owned">Owned / in hand</option><option value="ordered">Bought / awaiting delivery</option><option value="provisional">Details to confirm</option>
+    </select>
+    <div id="inventoryList" class="inv-list" aria-live="polite"></div>
+    <div class="toolbar"><button type="button" id="exportJSON" class="primary">✧ Back up vault</button><button type="button" id="importJSON" class="ghost">Import backup</button><button type="button" id="copyInventory" class="ghost">Copy list</button></div>
+    <input type="file" accept="application/json,.json" id="importFile" hidden />
+    <div class="backup-warning"><strong>✧ Back up your gems!</strong> Entries save on this browser only, not to your ChatGPT account. Export a JSON backup to Files or iCloud occasionally, especially before changing phones, clearing Safari data, or moving to the installed app.</div>
+  </section>
+  <section class="panel"><div class="sectiontop"><h2>YOUR CUSTOM SETTING PROJECTS</h2><span class="tiny">not purchases yet</span></div>
+  <div style="font-size:12px;line-height:1.65;color:#e9d5e7">✧ <b>Lavender garnet:</b> East–west bezel split-shank 14k yellow-gold ring.<br>✧ <b>Opal:</b> Rectangular 14k yellow-gold bezel pendant + 18-inch chain.<br>✧ <b>Diamond:</b> 1.18 ct oval east–west half-bezel necklace with concealed chain loops.<br>✧ <b>Family:</b> Matching botanical designs for Ellie and Harrison.</div>
+  <p class="note">Custom quote for garnet ring + opal pendant + 18-inch chain: <strong>$1,048</strong>. Not included in purchase totals unless you add it yourself as an inventory record.</p></section>
+</section>
+<div id="formShade" class="formshade" hidden><div class="formmodal" role="dialog" aria-modal="true" aria-labelledby="formTitle">
+  <div class="flexrow"><h2 id="formTitle">Add a new treasure ✨</h2><button type="button" id="cancelX" class="ghost" aria-label="Close">✕</button></div>
+  <form id="gemForm"><input type="hidden" id="gemId" />
+    <div class="field"><label for="gemName">Name / description</label><input id="gemName" required maxlength="120" placeholder="e.g. Forest green emerald-cut diamond" /></div>
+    <div class="twocol"><div class="field"><label for="gemKind">Material</label><select id="gemKind"><option>Lab-grown diamond</option><option>Natural diamond</option><option>Lab-grown gemstone</option><option>Natural gemstone</option><option>Jewelry / other</option><option>Unknown / to confirm</option></select></div>
+    <div class="field"><label for="gemStatus">Status</label><select id="gemStatus"><option value="ordered">Bought · awaiting delivery</option><option value="owned">Owned · in hand</option><option value="provisional">Details to confirm</option></select></div></div>
+    <div class="twocol"><div class="field"><label for="gemCut">Cut / shape</label><input id="gemCut" placeholder="Oval, marquise, shield…" /></div><div class="field"><label for="gemColor">Color</label><input id="gemColor" placeholder="White, lavender, green…" /></div></div>
+    <div class="twocol"><div class="field"><label for="gemCarat">Carats each (if known)</label><input id="gemCarat" type="number" min="0" step="0.001" inputmode="decimal" placeholder="0.060" /></div><div class="field"><label for="gemQty">Quantity</label><input id="gemQty" type="number" min="1" max="9999" value="1" inputmode="numeric" /></div></div>
+    <div class="twocol"><div class="field"><label for="gemCost">TOTAL paid ($)</label><input id="gemCost" type="number" min="0" step="0.01" inputmode="decimal" placeholder="25.00" /></div><div class="field"><label for="gemSeller">Seller / shop</label><input id="gemSeller" placeholder="Optional" /></div></div>
+    <div class="field"><label for="gemReport">Report / certification number</label><input id="gemReport" placeholder="Optional · IGI etc." /></div>
+    <div class="field"><label for="gemPlan">Future setting / intended owner</label><input id="gemPlan" placeholder="Ellie's flower studs, necklace…" /></div>
+    <div class="field"><label for="gemNotes">Notes</label><textarea id="gemNotes" placeholder="Measurements, what to verify, purchase date…"></textarea></div>
+    <div class="field"><label for="gemPhoto">Gem photo (optional)</label><input id="gemPhoto" type="file" accept="image/*" /><p class="note">Photos are compressed to save space. Export your backup if you add pictures.</p><button class="ghost" id="removePhoto" type="button" hidden>Remove photo</button></div>
+    <div class="stickybottom"><button type="button" id="cancelForm" class="ghost">Cancel</button><button type="submit" class="primary">Save treasure ✦</button></div>
+  </form></div></div>
+<p class="foot">✧ Price ranges are personal auction-bidding guidelines from our chat, not appraisals or guaranteed market rates. Calibrated primarily for certified 1–3 ct loose lab diamonds; tiny stones may price differently. Verify grading reports, authenticity, treatments, measurements, and fees. Local browser data is not synced across browsers or devices. ✧</p></main><div id="toast" role="status" aria-live="polite">Saved!</div><script>
+(() => {'use strict';
+const CUTS = [
+ ['Round brilliant',125,225],['Oval',150,275],['Marquise',160,275],['Pear',150,250],['Emerald',150,250],['Radiant',160,275],['Cushion',140,250],['Princess',140,240],['Asscher',175,300],['Specialty / antique',275,425]
+];
+const COLORS = [
+ ['White / near colorless',null,null,null],['Champagne / honey yellow',150,200,325],['Deep green / olive',175,250,400],['Peach / pink',175,250,400],['Burnt orange',175,275,450]
+];
+const $=id=>document.getElementById(id), USD=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',minimumFractionDigits:2,maximumFractionDigits:2}).format(n);
+const neat=n=>'$'+new Intl.NumberFormat('en-US',{maximumFractionDigits:0}).format(n);
+const ct=n=>new Intl.NumberFormat('en-US',{minimumFractionDigits:3,maximumFractionDigits:3}).format(n);
+const maybe=(num,def)=>{const n=Number(num);return Number.isFinite(n)?n:def};
+let personalEdited=false;let lastSuggested=275;
+const fields=['cut','color','carat','qty','personalMax','bid','fees'];
+CUTS.forEach(([name])=>$('cut').add(new Option(name,name)));
+COLORS.forEach(([name])=>$('color').add(new Option(name,name)));
+$('cut').value='Oval';
+$('cutsTable').innerHTML=CUTS.map(([n,a,b])=>`<tr><td>${n}</td><td>${neat(a)}</td><td>${neat(b)}</td></tr>`).join('');
+$('colorsTable').innerHTML=COLORS.slice(1).map(([n,l,h,cap])=>`<tr><td>${n}</td><td>${neat(l)}–${neat(h)}</td><td>${neat(cap)}</td></tr>`).join('');
+try{let saved=JSON.parse(localStorage.getItem('gemVaultBidV1')||'null');if(saved){fields.forEach(f=>{if(saved[f]!==undefined && saved[f]!==null)$(f).value=saved[f]});personalEdited=!!saved.personalEdited;}}catch(e){}
+if(!$('cut').value)$('cut').value='Oval';
+const limits=()=>{const cut=CUTS.find(c=>c[0]===$('cut').value)||CUTS[1];const color=COLORS.find(c=>c[0]===$('color').value)||COLORS[0];if(color[1]===null)return {low:0,great:cut[1],cap:cut[2],fancy:false};return {low:color[1],great:color[2],cap:color[3],fancy:true};};
+function persist(){try{const saved=Object.fromEntries(fields.map(k=>[k,$(k).value]));saved.personalEdited=personalEdited;localStorage.setItem('gemVaultBidV1',JSON.stringify(saved));}catch(e){}}
+function update(){const p=limits();const weight=Math.max(.001,Math.min(999,maybe($('carat').value,1.18)));const qty=Math.max(1,Math.min(1000,Math.round(maybe($('qty').value,1))));const total=weight*qty;lastSuggested=p.cap;
+if(!personalEdited || !$('personalMax').value){$('personalMax').value=p.cap;personalEdited=false}
+const customMax=Math.max(0,maybe($('personalMax').value,p.cap));
+$('greatCt').textContent=p.fancy?`${neat(p.low)}–${neat(p.great)}`:`≤ ${neat(p.great)}`;
+$('capCt').textContent=neat(p.cap);
+$('cutNote').textContent=p.fancy?'✧ Colored stones use the earlier color-based guide, not an added shape premium.':'✧ White / near-colorless stones use your cut-based guide.';
+$('targetTotal').textContent=USD(total*customMax);
+$('greatTotal').textContent=USD(total*p.great);
+$('capTotal').textContent=USD(total*p.cap);
+$('weightTotal').textContent=ct(total)+' ct';
+$('weightSummary').textContent=ct(total)+' ct total · '+qty+' '+(qty===1?'stone':'stones');
+const entered=$('bid').value.trim()!=='';
+const bid=Math.max(0,maybe($('bid').value,0));const fees=Math.max(0,maybe($('fees').value,0));const all=bid+fees;
+$('allIn').textContent=entered?USD(all):'—';
+$('effectiveCt').textContent=entered?USD(all/total):'—';
+$('room').textContent=entered?USD(total*customMax-all):'—';
+const status=$('status');status.className='status';
+if(!entered){status.innerHTML='<strong>✨ Ready when you are</strong>Enter the auction bid to check it against your guide.'}
+else if(all>total*customMax+0.001){status.classList.add('red');status.innerHTML=`<strong>✦ Above your personal limit</strong>${USD(all-total*customMax)} over your selected maximum. Let this auction go unless you intentionally raise the limit.`}
+else if(all>total*p.cap+.001){status.classList.add('amber');status.innerHTML='<strong>⚠ Above the guide ceiling</strong>This fits your custom limit, but exceeds the original soft ceiling. Compare other stones before bidding.'}
+else if(all<=total*p.great+.001){status.classList.add('green');status.innerHTML=`<strong>✨ Sparkly bargain territory!</strong>${USD(all/total)} per carat including listed fees, within the great-buy guideline. Still verify the stone.`}
+else{status.classList.add('amber');status.innerHTML=`<strong>✧ Within your limit</strong>${USD(all/total)} per carat including listed fees. Below the soft ceiling but not in the amazing-deal zone.`}
+persist();}
+function adjustCt(delta){const n=Math.max(.001,Math.min(999,Math.round((maybe($('carat').value,1.18)+delta)*1000)/1000));$('carat').value=n.toFixed(3);update()}
+function adjustQty(delta){$('qty').value=Math.max(1,Math.min(1000,Math.round(maybe($('qty').value,1))+delta));update()}
+$('minus').addEventListener('click',()=>adjustCt(-.01));$('plus').addEventListener('click',()=>adjustCt(.01));
+document.querySelectorAll('[data-carat]').forEach(b=>b.addEventListener('click',()=>adjustCt(Number(b.dataset.carat))));
+$('qtyMinus').addEventListener('click',()=>adjustQty(-1));$('qtyPlus').addEventListener('click',()=>adjustQty(1));
+['cut','color'].forEach(f=>$(f).addEventListener('change',update));
+['carat','qty','bid','fees'].forEach(f=>$(f).addEventListener('input',update));
+$('personalMax').addEventListener('input',()=>{personalEdited=true;update()});
+$('useGuide').addEventListener('click',()=>{personalEdited=false;$('personalMax').value=limits().cap;update()});
+$('clearBid').addEventListener('click',()=>{$('bid').value='';$('fees').value='0';update()});
+let toastTimer;function toast(msg){$('toast').textContent=msg;$('toast').classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('show'),2200)}
+$('copy').addEventListener('click',async()=>{const p=limits();const weight=Math.max(.001,maybe($('carat').value,1.18));const qty=Math.max(1,Math.round(maybe($('qty').value,1)));const all=weight*qty;const max=Math.max(0,maybe($('personalMax').value,p.cap));const bid=$('bid').value.trim();const fees=Math.max(0,maybe($('fees').value,0));const txt=`💎 THE GEM VAULT · Diamond auction\n${$('cut').value} · ${$('color').value}\n${ct(weight)} ct each × ${qty} = ${ct(all)} ct total\nGreat-buy / ct: ${p.fancy?neat(p.low)+'–'+neat(p.great):'≤ '+neat(p.great)}\nGuide soft ceiling / ct: ${neat(p.cap)}\nYour max / ct: ${USD(max)}\nYour total max: ${USD(all*max)}\nGreat-buy total: ≤ ${USD(all*p.great)}\n${bid?'Current all-in bid: '+USD(Number(bid)+fees)+' ('+USD((Number(bid)+fees)/all)+'/ct)':'No bid entered'}\nReminder: verify stone, measurements & certification.`;
+try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(txt);toast('Copied auction summary ✨')}else{const ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();const result=document.execCommand('copy');ta.remove();toast(result?'Copied auction summary ✨':'Screenshot or select the results')} }catch(e){toast('Screenshot the results ✨')}});
+update();
+// v2 navigation + inventory
+const inventorySeed = [];
+let items=[];let currentPhoto='';let activeTab='calculator';
+const IN_KEY='keiterGemVaultInventoryV2';
+const iconFor=x=>{let s=(x.color+' '+x.kind+' '+x.cut+' '+x.name).toLowerCase(); if(s.includes('opal'))return '🌈'; if(s.includes('orange'))return '🧡';if(s.includes('lavender'))return '💜';if(s.includes('pearl')||s.includes('bunny'))return '🫧';if(s.includes('green'))return '💚';if(s.includes('ring'))return '💍';return '💎'};
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const money=n=>'$'+Number(n).toLocaleString('en-US',{maximumFractionDigits:2,minimumFractionDigits:0});
+function storeInventory(){try{localStorage.setItem(IN_KEY,JSON.stringify(items));return true}catch(e){toast('Storage full · export backup');return false}}
+function loadInventory(){try{const v=localStorage.getItem(IN_KEY);if(v){const parsed=JSON.parse(v);items=Array.isArray(parsed)?parsed:inventorySeed}else{items=inventorySeed;storeInventory()}}catch(e){items=inventorySeed;toast('Storage unavailable; export a backup')} }
+function tabTo(which){activeTab=which;$('calculatorPage').hidden=which!=='calculator';$('inventoryPage').hidden=which!=='inventory';$('tabCalc').classList.toggle('active',which==='calculator');$('tabInventory').classList.toggle('active',which==='inventory');$('tabCalc').setAttribute('aria-selected',which==='calculator');$('tabInventory').setAttribute('aria-selected',which==='inventory');if(which==='inventory')drawInventory();window.scrollTo({top:0,behavior:'instant'})}
+$('tabCalc').addEventListener('click',()=>tabTo('calculator'));
+$('tabInventory').addEventListener('click',()=>tabTo('inventory'));
+function drawInventory(){const query=$('inventorySearch').value.trim().toLowerCase(),filter=$('inventoryFilter').value;
+let show=items.filter(x=>(filter==='all'||x.status===filter)&&(!query||[x.name,x.cut,x.color,x.kind,x.seller,x.report,x.plan,x.notes].join(' ').toLowerCase().includes(query)));
+$('countItems').textContent=items.length;
+$('countStones').textContent=items.reduce((n,x)=>n+(Number(x.qty)||1),0);
+$('spentTotal').textContent=money(items.reduce((n,x)=>n+(Number(x.cost)||0),0));
+$('inventoryList').innerHTML=show.length?show.map(x=>{const qty=Number(x.qty)||1, w=Number(x.carat),weight=w>0?ct(w*qty)+' ct total · ':'';const label=x.status==='owned'?'Owned':x.status==='ordered'?'Bought · awaiting':'To confirm';return `<article class="inv-card"><div class="inv-stone">${x.photo?`<img src="${esc(x.photo)}" alt="${esc(x.name)}">`:iconFor(x)}</div><div style="min-width:0"><div class="inv-title">${esc(x.name)}</div><div class="inv-meta">${esc(x.cut||x.kind)} · ${esc(x.color||'Color to confirm')}<br>${weight}${qty} ${qty===1?'stone/piece':'stones/pieces'} · <span class="inv-price">${Number.isFinite(Number(x.cost))&&x.cost!==''?money(x.cost):'Price unknown'}</span></div><div class="inv-actions"><span class="chip ${esc(x.status)}">${label}</span><button data-edit="${esc(x.id)}" type="button">Edit</button><button data-delete="${esc(x.id)}" type="button">Delete</button></div>${x.plan?`<div class="inv-meta">✧ ${esc(x.plan)}</div>`:''}${x.report?`<div class="inv-meta">${esc(x.report)}</div>`:''}</div></article>`}).join(''):'<div class="empty">✧ No gems match. Try another filter or add a new treasure.</div>';
+$('inventoryList').querySelectorAll('[data-edit]').forEach(b=>b.addEventListener('click',()=>editGem(b.dataset.edit)));
+$('inventoryList').querySelectorAll('[data-delete]').forEach(b=>b.addEventListener('click',()=>deleteGem(b.dataset.delete)));
+}
+$('inventorySearch').addEventListener('input',drawInventory);
+$('inventoryFilter').addEventListener('change',drawInventory);
+const props=['Name','Kind','Status','Cut','Color','Carat','Qty','Cost','Seller','Report','Plan','Notes'];
+function openForm(){ $('formShade').hidden=false;document.body.style.overflow='hidden';$('gemName').focus({preventScroll:true})}
+function closeForm(){ $('formShade').hidden=true;document.body.style.overflow='';$('gemPhoto').value='' }
+function editGem(id){const x=items.find(y=>y.id===id);if(!x)return;$('gemForm').reset();$('gemId').value=x.id;for(const p of props){const el=$('gem'+p);if(el)el.value=x[p.toLowerCase()]??''};currentPhoto=x.photo||'';$('removePhoto').hidden=!currentPhoto;$('formTitle').textContent='Edit your treasure ✨';openForm()}
+function addGem(){ $('gemForm').reset();$('gemId').value='';$('gemQty').value='1';$('gemStatus').value='ordered';currentPhoto='';$('removePhoto').hidden=true;$('formTitle').textContent='Add a new treasure ✨';openForm()}
+$('addGem').addEventListener('click',addGem);
+$('cancelX').addEventListener('click',closeForm);$('cancelForm').addEventListener('click',closeForm);
+$('formShade').addEventListener('click',e=>{if(e.target===$('formShade'))closeForm()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('formShade').hidden)closeForm()});
+$('removePhoto').addEventListener('click',()=>{currentPhoto='';$('gemPhoto').value='';$('removePhoto').hidden=true});
+function compressPhoto(file){return new Promise((resolve,reject)=>{const reader=new FileReader();reader.onerror=()=>reject(Error('Photo read failed'));reader.onload=()=>{const im=new Image();im.onload=()=>{const scale=Math.min(1,430/Math.max(im.width,im.height)),canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(im.width*scale));canvas.height=Math.max(1,Math.round(im.height*scale));canvas.getContext('2d').drawImage(im,0,0,canvas.width,canvas.height);resolve(canvas.toDataURL('image/jpeg',.68))};im.onerror=()=>reject(Error('Photo unsupported'));im.src=reader.result};reader.readAsDataURL(file)})}
+$('gemPhoto').addEventListener('change',async e=>{const file=e.target.files[0];if(!file)return;try{currentPhoto=await compressPhoto(file);$('removePhoto').hidden=false;toast('Photo ready ✨')}catch(err){toast('Could not read photo')}});
+$('gemForm').addEventListener('submit',e=>{e.preventDefault();const id=$('gemId').value||'gem-'+Date.now()+'-'+Math.round(Math.random()*1e5);const record={id,photo:currentPhoto};for(const p of props){const v=$('gem'+p).value;record[p.toLowerCase()]=['Carat','Qty','Cost'].includes(p)?(v===''?'':Number(v)):v.trim()};record.qty=Math.max(1,Math.round(Number(record.qty)||1));const i=items.findIndex(x=>x.id===id);if(i<0)items.unshift(record);else items[i]=record;if(storeInventory()){closeForm();drawInventory();toast('Gem saved to vault ✨')}});
+function deleteGem(id){const x=items.find(y=>y.id===id);if(!x||!confirm(`Delete “${x.name}” from your vault?`))return;items=items.filter(y=>y.id!==id);storeInventory();drawInventory();toast('Entry deleted')}
+function textInventory(){return 'THE KEITER FAMILY GEM VAULT\n'+items.map((x,i)=>`${i+1}. ${x.name} | ${x.qty||1} × ${x.carat||'?'} ct | ${x.color||'?'} | ${x.status} | ${x.cost!==''?money(x.cost):'cost unknown'} | ${x.plan||''}`).join('\n')}
+$('copyInventory').addEventListener('click',async()=>{const s=textInventory();try{await navigator.clipboard.writeText(s);toast('Inventory copied ✨')}catch(e){const ta=document.createElement('textarea');ta.value=s;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();toast('Inventory copied')}});
+$('exportJSON').addEventListener('click',async()=>{const json=JSON.stringify({app:'Keiter Family Gem Vault',version:2,exportedAt:new Date().toISOString(),items},null,2);const blob=new Blob([json],{type:'application/json'});const fname='Keiter_Gem_Vault_Backup_'+new Date().toISOString().slice(0,10)+'.json';const f=new File([blob],fname,{type:'application/json'});if(navigator.share&&navigator.canShare&&navigator.canShare({files:[f]})){try{await navigator.share({files:[f],title:'Gem Vault Backup'});toast('Backup ready to save ✨');return}catch(e){if(e.name==='AbortError')return}}
+const u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=fname;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1500);toast('Backup downloaded ✨')});
+$('importJSON').addEventListener('click',()=>$('importFile').click());
+$('importFile').addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;try{const obj=JSON.parse(await f.text());if(!Array.isArray(obj.items)||obj.items.length>1500)throw Error('Invalid Gem Vault backup');if(!confirm(`Replace this device's ${items.length} entries with ${obj.items.length} backed-up entries? Export your current collection first if needed.`))return;items=obj.items.filter(x=>x&&typeof x.name==='string'&&typeof x.id==='string').map(x=>({...x,photo:x.photo||''}));storeInventory();drawInventory();toast('Backup restored ✨')}catch(err){alert('This does not appear to be a valid Gem Vault JSON backup.')}finally{e.target.value=''}});
+// Allow adding current calculated stone to inventory in one tap.
+$('saveBidToVault').addEventListener('click',()=>{tabTo('inventory');addGem();$('gemKind').value='Lab-grown diamond';$('gemName').value=$('cut').value+' lab-grown diamond';$('gemCut').value=$('cut').value;$('gemColor').value=$('color').value;$('gemCarat').value=$('carat').value;$('gemQty').value=$('qty').value;$('gemCost').value=$('bid').value?$('bid').value:'';$('gemNotes').value='From live bid calculator. Verify final purchase, certification and measurements.'});
+loadInventory();drawInventory();
+})();
+</script><script>if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}))}</script></body></html>
